@@ -1,0 +1,72 @@
+// Sizes
+$custom-radio-height:rem-calc(32);
+$custom-radio-width:$custom-radio-height;
+$custom-radio-label-text:rem-calc(16);
+$custom-radio-label-line-height:1.5*$custom-radio-label-text;
+$custom-radio-margin-bottom:$custom-radio-label-text;
+$custom-radio-label-left-padding:rem-calc(40);
+//Colors
+$color-custom-radio-default-bdr:#aaa;
+$color-custom-radio-checked-bdr:$color-custom-radio-default-bdr;
+
+// Default 
+input[type=radio].css-custom-radio {
+	// .visuallyhidden from html5 boilerplate
+	border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+
+	& + label.css-custom-radio {
+		cursor: pointer;
+		position: relative;
+		display: inline-block;
+		padding-left: $custom-radio-label-left-padding;
+		font-size: $custom-radio-label-text;
+		line-height: $custom-radio-label-line-height;
+		min-height: $custom-radio-height;
+		padding-top: ($custom-radio-height - $custom-radio-label-line-height)/2;
+		margin-bottom: $custom-radio-margin-bottom;
+	}
+	& + label.css-custom-radio:after {
+		position: absolute;
+		content: '';
+		width: $custom-radio-width;
+		height: $custom-radio-height;
+		border-radius: 50%;
+		border:1px solid $color-custom-radio-default-bdr;
+		left:0;
+		top:50%;
+		margin-top:-$custom-radio-height/2;
+	}
+
+}
+
+// Checked
+input[type=radio].css-custom-radio:checked {
+
+	& + label.css-custom-radio:after {
+		border-color: #000;
+	}
+}
+
+// Focus
+input[type=radio].css-custom-radio:focus {
+
+	& + label.css-custom-radio:after {
+		outline:red dashed 1px;
+	}
+}
+
+// Disabled
+input[type=radio].css-custom-radio[disabled] {
+
+	& + label.css-custom-radio {
+	}
+	& + label.css-custom-radio:after {
+	}
+}

@@ -1593,18 +1593,48 @@ select {
     left: auto;
   }
 }
-/* line 172, ../scss/vendor/foundation/components/_global.scss */
-.navigation-main-container ul:before, .navigation-main-container ul:after {
-  content: " ";
-  display: table;
+/* line 13, ../scss/partials/forms/_css-custom-radio.scss */
+input[type=radio].css-custom-radio {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
-/* line 173, ../scss/vendor/foundation/components/_global.scss */
-.navigation-main-container ul:after {
-  clear: both;
+/* line 24, ../scss/partials/forms/_css-custom-radio.scss */
+input[type=radio].css-custom-radio + label.css-custom-radio {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding-left: 2.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 2rem;
+  padding-top: 0.25rem;
+  margin-bottom: 1rem;
 }
-/* line 6, ../scss/partials/navigation/_navigation.scss */
-.navigation-main-container li {
-  float: left;
-  display: block;
-  padding: 0.625rem 1.25rem;
+/* line 35, ../scss/partials/forms/_css-custom-radio.scss */
+input[type=radio].css-custom-radio + label.css-custom-radio:after {
+  position: absolute;
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid #aaaaaa;
+  left: 0;
+  top: 50%;
+  margin-top: -1rem;
+}
+
+/* line 52, ../scss/partials/forms/_css-custom-radio.scss */
+input[type=radio].css-custom-radio:checked + label.css-custom-radio:after {
+  border-color: #000;
+}
+
+/* line 60, ../scss/partials/forms/_css-custom-radio.scss */
+input[type=radio].css-custom-radio:focus + label.css-custom-radio:after {
+  outline: red dashed 1px;
 }
