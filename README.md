@@ -6,6 +6,8 @@ Customize radiobuttons and checkboxes with CSS. The solution in this example ful
 - Semantically correct, i.e. validated with http://validator.w3.org/
 - Layout does not break when label text span over multiple rows
 - The icon should not be a child element of the label, since this will cause usability problems on mobile devices
+
+
 ## Example CSS Custom Radio
 Fiddle [http://jsfiddle.net/eriolo/3tcx5ym2/3/](http://jsfiddle.net/eriolo/3tcx5ym2/3/)
 ```HTML
