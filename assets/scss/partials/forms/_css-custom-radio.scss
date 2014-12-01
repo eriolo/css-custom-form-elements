@@ -51,8 +51,7 @@ input[type=radio].css-custom-radio {
 		border-radius: 50%;
 		border:1px solid $color-custom-radio-default-bdr;
 		left:0;
-		top:50%;
-		margin-top:-$custom-radio-height/2;
+		top:0;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;

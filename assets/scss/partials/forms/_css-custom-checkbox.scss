@@ -51,8 +51,7 @@ input[type=checkbox].css-custom-checkbox {
 		height: $custom-checkbox-height;
 		border:1px solid $color-custom-checkbox-default-bdr;
 		left:0;
-		top:50%;
-		margin-top:-$custom-checkbox-height/2;
+		top:0;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
