@@ -25,6 +25,9 @@ input[type=radio].css-custom-radio {
     padding: 0;
     position: absolute;
     width: 1px;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 
 	& + label.css-custom-radio {
 		cursor: pointer;
@@ -36,6 +39,9 @@ input[type=radio].css-custom-radio {
 		min-height: $custom-radio-height;
 		padding-top: ($custom-radio-height - $custom-radio-label-line-height)/2;
 		margin-bottom: $custom-radio-margin-bottom;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 	& + label.css-custom-radio:after {
 		position: absolute;
@@ -47,6 +53,9 @@ input[type=radio].css-custom-radio {
 		left:0;
 		top:50%;
 		margin-top:-$custom-radio-height/2;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 
 }
@@ -63,6 +72,9 @@ input[type=radio].css-custom-radio:checked {
 		height: $custom-radio-bullet-height;
 		background-color: $color-custom-radio-bullet;
 		border-radius: 50%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 	& + label.css-custom-radio:after {
 		border-color: #000;

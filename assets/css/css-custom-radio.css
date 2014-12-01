@@ -8,8 +8,11 @@ input[type=radio].css-custom-radio {
   padding: 0;
   position: absolute;
   width: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* line 29, ../scss/partials/forms/_css-custom-radio.scss */
+/* line 32, ../scss/partials/forms/_css-custom-radio.scss */
 input[type=radio].css-custom-radio + label.css-custom-radio {
   cursor: pointer;
   position: relative;
@@ -20,8 +23,11 @@ input[type=radio].css-custom-radio + label.css-custom-radio {
   min-height: 2rem;
   padding-top: 0.25rem;
   margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* line 40, ../scss/partials/forms/_css-custom-radio.scss */
+/* line 46, ../scss/partials/forms/_css-custom-radio.scss */
 input[type=radio].css-custom-radio + label.css-custom-radio:after {
   position: absolute;
   content: '';
@@ -32,9 +38,12 @@ input[type=radio].css-custom-radio + label.css-custom-radio:after {
   left: 0;
   top: 50%;
   margin-top: -1rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* line 57, ../scss/partials/forms/_css-custom-radio.scss */
+/* line 66, ../scss/partials/forms/_css-custom-radio.scss */
 input[type=radio].css-custom-radio:checked + label.css-custom-radio:before {
   content: '';
   position: absolute;
@@ -44,27 +53,30 @@ input[type=radio].css-custom-radio:checked + label.css-custom-radio:before {
   height: 0.75rem;
   background-color: #444444;
   border-radius: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* line 67, ../scss/partials/forms/_css-custom-radio.scss */
+/* line 79, ../scss/partials/forms/_css-custom-radio.scss */
 input[type=radio].css-custom-radio:checked + label.css-custom-radio:after {
   border-color: #000;
 }
 
-/* line 75, ../scss/partials/forms/_css-custom-radio.scss */
+/* line 87, ../scss/partials/forms/_css-custom-radio.scss */
 input[type=radio].css-custom-radio:focus + label.css-custom-radio:after {
   outline: #4183c4 dashed 1px;
 }
 
-/* line 84, ../scss/partials/forms/_css-custom-radio.scss */
+/* line 96, ../scss/partials/forms/_css-custom-radio.scss */
 input[type=radio].css-custom-radio[disabled]:checked + label.css-custom-radio:before {
   background-color: #cccccc;
 }
-/* line 88, ../scss/partials/forms/_css-custom-radio.scss */
+/* line 100, ../scss/partials/forms/_css-custom-radio.scss */
 input[type=radio].css-custom-radio[disabled] + label.css-custom-radio {
   color: #cccccc;
   cursor: default;
 }
-/* line 92, ../scss/partials/forms/_css-custom-radio.scss */
+/* line 104, ../scss/partials/forms/_css-custom-radio.scss */
 input[type=radio].css-custom-radio[disabled] + label.css-custom-radio:after {
   border-color: #cccccc;
 }

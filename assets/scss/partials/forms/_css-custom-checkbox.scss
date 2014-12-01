@@ -26,6 +26,9 @@ input[type=checkbox].css-custom-checkbox {
     padding: 0;
     position: absolute;
     width: 1px;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 
 	& ~ label.css-custom-checkbox {
 		cursor: pointer;
@@ -37,6 +40,9 @@ input[type=checkbox].css-custom-checkbox {
 		min-height: $custom-checkbox-height;
 		padding-top: ($custom-checkbox-height - $custom-checkbox-label-line-height)/2;
 		margin-bottom: $custom-checkbox-margin-bottom;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 	& ~ label.css-custom-checkbox:after {
 		position: absolute;
@@ -47,6 +53,9 @@ input[type=checkbox].css-custom-checkbox {
 		left:0;
 		top:50%;
 		margin-top:-$custom-checkbox-height/2;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 
 }
@@ -61,7 +70,10 @@ input[type=checkbox].css-custom-checkbox:checked {
 		height: $custom-checkbox-tick-height;
 		position:absolute;
 		left:($custom-checkbox-width - $custom-checkbox-tick-width) / 2;
-		top:($custom-checkbox-height - $custom-checkbox-tick-height) / 2;;
+		top:($custom-checkbox-height - $custom-checkbox-tick-height) / 2;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 	& ~ label.css-custom-checkbox:after {
 		border-color: #000;
