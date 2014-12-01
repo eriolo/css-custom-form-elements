@@ -5,9 +5,14 @@ $custom-radio-label-text:rem-calc(16);
 $custom-radio-label-line-height:1.5*$custom-radio-label-text;
 $custom-radio-margin-bottom:$custom-radio-label-text;
 $custom-radio-label-left-padding:rem-calc(40);
+$custom-radio-bullet-width:rem-calc(12);
+$custom-radio-bullet-height:$custom-radio-bullet-width;
 //Colors
 $color-custom-radio-default-bdr:#aaa;
 $color-custom-radio-checked-bdr:$color-custom-radio-default-bdr;
+$color-custom-radio-outline-focus:#4183c4;
+$color-custom-radio-bullet:#444;
+$color-disabled:#ccc;
 
 // Default 
 input[type=radio].css-custom-radio {
@@ -49,6 +54,16 @@ input[type=radio].css-custom-radio {
 // Checked
 input[type=radio].css-custom-radio:checked {
 
+	& + label.css-custom-radio:before {
+		content:'';
+		position:absolute;
+		left:($custom-radio-width - $custom-radio-bullet-width) / 2;
+		top:($custom-radio-height - $custom-radio-bullet-height) / 2;
+		width: $custom-radio-bullet-width;
+		height: $custom-radio-bullet-height;
+		background-color: $color-custom-radio-bullet;
+		border-radius: 50%;
+	}
 	& + label.css-custom-radio:after {
 		border-color: #000;
 	}
@@ -58,15 +73,23 @@ input[type=radio].css-custom-radio:checked {
 input[type=radio].css-custom-radio:focus {
 
 	& + label.css-custom-radio:after {
-		outline:red dashed 1px;
+		outline:$color-custom-radio-outline-focus dashed 1px;
 	}
 }
 
 // Disabled
 input[type=radio].css-custom-radio[disabled] {
 
+	&:checked {
+		& + label.css-custom-radio:before {
+			background-color: $color-disabled;
+		}
+	}
 	& + label.css-custom-radio {
+		color:$color-disabled;
+		cursor: default;
 	}
 	& + label.css-custom-radio:after {
+		border-color:$color-disabled;
 	}
 }

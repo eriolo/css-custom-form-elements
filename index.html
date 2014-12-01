@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -8,20 +8,22 @@
 		<link rel="stylesheet" href="assets/css/app.css" />
 	</head>
 	<body>
+
 		<header>
 			<div class="row">
 				<div class="columns">
-					<h1>CSS Custom Radio</h1>
+					<h1>CSS Custom Elements</h1>
 					<hr />
 				</div>
 			</div>
 		</header>
+
 		<section class="row">
 			<header class="columns">
-				<h2>Form elements</h2>
+				<h2>CSS Custom Radio</h2>
 			</header>
 			<div class="columns">
-				<input type="radio" name="css-radio-group" id="radio-1" class="css-custom-radio" />
+				<input type="radio" name="css-radio-group" id="radio-1" class="css-custom-radio" checked />
 				<label for="radio-1" class="css-custom-radio">CSS Custom Radio 1</label>
 			</div>
 			<div class="columns">
@@ -32,6 +34,35 @@
 				<input type="radio" name="css-radio-group" id="radio-3" class="css-custom-radio" />
 				<label for="radio-3" class="css-custom-radio">CSS Custom Radio 3</label>
 			</div>
+			<div class="columns">
+				<input type="radio" name="css-radio-group" id="radio-4" class="css-custom-radio" disabled />
+				<label for="radio-4" class="css-custom-radio">CSS Custom Radio 4</label>
+			</div>
 		</section>
+
+		<section class="row">
+			<header class="columns">
+				<h2>CSS Custom Checkbox</h2>
+			</header>
+			<div class="columns">
+				<input type="checkbox" name="css-checkbox-group" id="checkbox-1" class="css-custom-checkbox" checked />
+				<input type="hidden" />
+				<label for="checkbox-1" class="css-custom-checkbox">CSS Custom Checkbox 1</label>
+			</div>
+			<div class="columns">
+				<input type="checkbox" name="css-checkbox-group" id="checkbox-2" class="css-custom-checkbox" />
+				<input type="hidden" />
+				<label for="checkbox-2" class="css-custom-checkbox">CSS Custom Checkbox 2</label>
+			</div>
+			<div class="columns">
+				<input type="checkbox" name="css-checkbox-group" id="checkbox-3" class="css-custom-checkbox" />
+				<label for="checkbox-3" class="css-custom-checkbox">CSS Custom Checkbox 3</label>
+			</div>
+			<div class="columns">
+				<input type="checkbox" name="css-checkbox-group" id="checkbox-4" class="css-custom-checkbox" disabled="" />
+				<label for="checkbox-4" class="css-custom-checkbox">CSS Custom Checkbox 4</label>
+			</div>
+		</section>
+
 	</body>
 </html>
