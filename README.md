@@ -1,5 +1,4 @@
 # CSS Custom Form Elements
-==============
 ## Example CSS Custom Radio
 ```HTML
 <input type="radio" name="radio-group" class="css-custom-radio" id="radiobutton-1" />
