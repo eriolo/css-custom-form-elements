@@ -9,9 +9,10 @@ $custom-radio-bullet-width:rem-calc(12);
 $custom-radio-bullet-height:$custom-radio-bullet-width;
 //Colors
 $color-custom-radio-default-bdr:#aaa;
-$color-custom-radio-checked-bdr:$color-custom-radio-default-bdr;
+$color-custom-radio-checked-bdr:#444;
 $color-custom-radio-outline-focus:#4183c4;
 $color-custom-radio-bullet:#444;
+$color-custom-radio-bgd:#fff;
 $color-disabled:#ccc;
 
 // Default 
@@ -45,6 +46,7 @@ input[type=radio].css-custom-radio {
 	}
 	& + label.css-custom-radio:after {
 		position: absolute;
+		background-color: $color-custom-radio-bgd;
 		content: '';
 		width: $custom-radio-width;
 		height: $custom-radio-height;
@@ -65,6 +67,7 @@ input[type=radio].css-custom-radio:checked {
 	& + label.css-custom-radio:before {
 		content:'';
 		position:absolute;
+		z-index: 1;
 		left:($custom-radio-width - $custom-radio-bullet-width) / 2;
 		top:($custom-radio-height - $custom-radio-bullet-height) / 2;
 		width: $custom-radio-bullet-width;
@@ -76,7 +79,7 @@ input[type=radio].css-custom-radio:checked {
 		box-sizing: border-box;
 	}
 	& + label.css-custom-radio:after {
-		border-color: #000;
+		border-color: $color-custom-radio-checked-bdr;
 	}
 }
 
